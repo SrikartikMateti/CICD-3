@@ -13,6 +13,8 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages   # ✅ Required for GitHub Pages deployment
     steps:
       - uses: actions/checkout@v4
 
